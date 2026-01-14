@@ -1,50 +1,25 @@
 import { motion } from "framer-motion";
-import { Target, Lightbulb, Heart, Users, Award, Globe } from "lucide-react";
+import { Target, Lightbulb, Heart, Award, Globe } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 const values = [
   {
     icon: Lightbulb,
     title: "Innovation",
-    description: "We push boundaries and embrace new technologies to deliver cutting-edge solutions.",
+    description:
+      "We push boundaries and embrace new technologies to deliver cutting-edge solutions.",
   },
   {
     icon: Heart,
     title: "Integrity",
-    description: "Transparency and honesty guide every decision we make and every solution we build.",
-  },
-  {
-    icon: Users,
-    title: "Collaboration",
-    description: "We work alongside our clients as partners, sharing knowledge and expertise.",
+    description:
+      "Transparency and honesty guide every decision we make and every solution we build.",
   },
   {
     icon: Award,
     title: "Excellence",
-    description: "Quality is non-negotiable. We strive for excellence in everything we do.",
-  },
-];
-
-const team = [
-  {
-    name: "Alexandra Rivera",
-    role: "CEO & Co-Founder",
-    bio: "15+ years in AI and enterprise software. Former Google AI lead.",
-  },
-  {
-    name: "David Chen",
-    role: "CTO & Co-Founder",
-    bio: "PhD in Machine Learning. Pioneer in NLP and computer vision.",
-  },
-  {
-    name: "Sarah Mitchell",
-    role: "Head of AI Research",
-    bio: "Published researcher with 50+ papers on deep learning.",
-  },
-  {
-    name: "Marcus Johnson",
-    role: "VP of Engineering",
-    bio: "Built engineering teams at 3 successful AI startups.",
+    description:
+      "Quality is non-negotiable. We strive for excellence in everything we do.",
   },
 ];
 
@@ -76,7 +51,7 @@ export default function About() {
               About <span className="gradient-text">DeltaPrime</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              We're a team of AI pioneers, engineers, and strategists dedicated to 
+              We're a team of engineers, strategists, and builders dedicated to
               transforming businesses through intelligent technology solutions.
             </p>
           </motion.div>
@@ -97,17 +72,16 @@ export default function About() {
                 <span>Our Mission</span>
               </div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6">
-                Democratizing AI for Every Business
+                AI That Works for Real Businesses
               </h2>
               <p className="text-muted-foreground mb-6">
-                At DeltaPrime, we believe that artificial intelligence shouldn't be 
-                reserved for tech giants. Our mission is to make AI accessible, practical, 
-                and transformative for businesses of all sizes.
+                At DeltaPrime, we design AI solutions that deliver real impact not hype.
+                Our focus is on building practical, scalable, and intelligent systems that
+                help businesses automate, innovate, and grow with confidence.
               </p>
               <p className="text-muted-foreground">
-                Founded in 2020, we've grown from a small team of AI enthusiasts to a 
-                full-service AI consultancy, helping over 150 companies harness the power 
-                of intelligent technology.
+                Founded in 2025, we've grown into a full-service AI and software
+                consultancy, helping organizations ship real, measurable impact.
               </p>
             </motion.div>
 
@@ -118,21 +92,23 @@ export default function About() {
               className="grid grid-cols-2 gap-6"
             >
               <div className="p-6 bg-primary/10 rounded-2xl text-center">
-                <div className="font-heading text-4xl font-bold text-primary mb-2">2020</div>
+                <div className="font-heading text-4xl font-bold text-primary mb-2">
+                  2025
+                </div>
                 <p className="text-sm text-muted-foreground">Founded</p>
               </div>
               <div className="p-6 bg-card rounded-2xl border border-border text-center">
-                <div className="font-heading text-4xl font-bold mb-2">150+</div>
+                <div className="font-heading text-4xl font-bold mb-2">10+</div>
                 <p className="text-sm text-muted-foreground">Projects</p>
               </div>
               <div className="p-6 bg-card rounded-2xl border border-border text-center">
                 <div className="font-heading text-4xl font-bold mb-2">50+</div>
                 <p className="text-sm text-muted-foreground">Team Members</p>
               </div>
-              <div className="p-6 bg-primary/10 rounded-2xl text-center">
-                <div className="font-heading text-4xl font-bold text-primary mb-2">12</div>
-                <p className="text-sm text-muted-foreground">Countries</p>
-              </div>
+              
+              
+              
+              
             </motion.div>
           </div>
         </div>
@@ -160,7 +136,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {values.map((value, index) => (
               <motion.div
@@ -171,52 +147,12 @@ export default function About() {
                 <div className="w-14 h-14 mx-auto rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <value.icon className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-heading text-xl font-semibold mb-2">{value.title}</h3>
-                <p className="text-muted-foreground text-sm">{value.description}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-              Leadership Team
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Meet the people driving innovation at DeltaPrime
-            </p>
-          </motion.div>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
-            {team.map((member, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="p-6 bg-card rounded-2xl border border-border text-center group hover:border-primary/50 transition-colors"
-              >
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-accent flex items-center justify-center">
-                  <span className="font-heading text-2xl font-bold text-primary">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
-                <h3 className="font-heading text-xl font-semibold mb-1">{member.name}</h3>
-                <p className="text-primary text-sm font-medium mb-3">{member.role}</p>
-                <p className="text-muted-foreground text-sm">{member.bio}</p>
+                <h3 className="font-heading text-xl font-semibold mb-2">
+                  {value.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {value.description}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -240,8 +176,8 @@ export default function About() {
               Serving Clients Worldwide
             </h2>
             <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-              With offices in New York, London, and Singapore, we serve clients across 
-              12 countries, delivering AI solutions that transcend borders.
+              We serve clients across multiple countries, delivering software and
+              AI solutions that scale across teams, regions, and industries.
             </p>
           </motion.div>
         </div>

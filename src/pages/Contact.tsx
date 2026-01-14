@@ -24,19 +24,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@deltaprime.ai",
-    href: "mailto:hello@deltaprime.ai",
+    value: "hr@deltaprimeaisolutions.com",
+    href: "mailto:hr@deltaprimeaisolutions.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (234) 567-890",
-    href: "tel:+1234567890",
+    value: "+923047057347",
+    href: "tel:+923047057347",
   },
   {
     icon: MapPin,
     label: "Address",
-    value: "123 AI Boulevard, Tech City, TC 12345",
+    value: "86, Delta Prime AI Solutions, 2 Temple Rd, Mozang Chungi, Lahore, 54000",
     href: "#",
   },
 ];
@@ -58,7 +58,7 @@ export default function Contact() {
     setIsSubmitting(true);
     
     try {
-      await submitContactForm(data);
+      await submitContactForm(data as { name: string; email: string; message: string });
       
       toast({
         title: "Message Sent!",
