@@ -5,14 +5,14 @@ const footerLinks = {
   company: [
     { label: "About Us", href: "/about" },
     { label: "Services", href: "/services" },
-    { label: "Careers", href: "/jobs" },
+   // { label: "Careers", href: "/jobs" },
     { label: "Contact", href: "/contact" },
   ],
   services: [
     { label: "AI Development", href: "/services#ai" },
-    { label: "Machine Learning", href: "/services#ml" },
-    { label: "Data Analytics", href: "/services#data" },
-    { label: "Consulting", href: "/services#consulting" },
+    { label: "QA Development", href: "/services#ml" },
+    { label: "Mern Stack", href: "/services#data" },
+    { label: "DevOps", href: "/services#consulting" },
   ],
   legal: [
     { label: "Privacy Policy", href: "/privacy" },
@@ -21,7 +21,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/delta-prime-ai-solutions/", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
   { icon: Github, href: "https://github.com", label: "GitHub" },
 ];
@@ -103,18 +103,18 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span>123 AI Boulevard, Tech City, TC 12345</span>
+                <span>86, Delta Prime AI Solutions, 2 Temple Rd, Mozang Chungi, Lahore, 54000</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+92 304 7057347" className="hover:text-primary transition-colors">
+                  +92 304 7057347
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:hello@deltaprime.ai" className="hover:text-primary transition-colors">
-                  hello@deltaprime.ai
+                <a href="mailto:hr@deltaprimeaisolutions.com" className="hover:text-primary transition-colors">
+                  hr@deltaprimeaisolutions.com
                 </a>
               </li>
             </ul>

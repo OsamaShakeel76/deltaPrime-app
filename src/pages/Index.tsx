@@ -8,22 +8,22 @@ const services = [
   {
     icon: Brain,
     title: "AI Development",
-    description: "Custom AI solutions tailored to your business needs, from NLP to computer vision.",
+    description: "We design and build intelligent AI solutions that automate processes, unlock insights, and drive real business outcomes.",
   },
   {
     icon: BarChart3,
-    title: "Machine Learning",
-    description: "Predictive models and intelligent automation that drive data-driven decisions.",
+    title: "QA & Machine Learning",
+    description: "We ensure quality at every stage while using machine learning to optimize performance, predict issues, and deliver reliable, intelligent systems.",
   },
   {
     icon: Sparkles,
     title: "DevOps & Automation",
-    description: "Transform your operations with DevOps practices and intelligent automation that streamline deployments, improve reliability, and accelerate business growth.",
+    description: "We automate your infrastructure, deployments, and workflows to ship faster, scale reliably, and eliminate operational chaos.",
   },
   {
     icon: Users,
-    title: "AI Consulting",
-    description: "Strategic guidance to integrate AI into your business operations.",
+    title: "Web & Mobile Apps",
+    description: "End-to-end web & mobile app development using modern architectures, clean UX, and production-ready engineering.",
   },
 ];
 
@@ -347,59 +347,65 @@ export default function Index() {
       </section>
 
   {/* CTA Section */}
-  <section className="py-20 bg-gradient-to-br from-primary to-primary/80">
-    <div className="container mx-auto px-4">
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 text-primary-foreground">
-        <a
-          href="tel:+923047057347"
-          className="font-medium hover:underline"
-        >
-          📞 +92 304 7057347
-        </a>
-        <span className="hidden sm:block">|</span>
-        <a
-          href="mailto:hr@deltaprimeaisolutions.com"
-          className="font-medium hover:underline"
-        >
-          📧 hr@deltaprimeaisolutions.com
-        </a>
-      </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="text-center text-primary-foreground"
+ {/*
+<section className="py-20 bg-gradient-to-br from-primary to-primary/80">
+  <div className="container mx-auto px-4">
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 text-primary-foreground">
+      <a
+        href="tel:+923047057347"
+        className="font-medium hover:underline"
       >
-        <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
-          Ready to Transform Your Business?
-        </h2>
-        <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-          Let's discuss how AI can revolutionize your operations. 
-          Schedule a free consultation with our experts today.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            asChild
-            size="xl"
-            className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
-          >
-            <Link to="/contact">
-              Schedule Consultation <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
-          </Button>
-          <Button
-            asChild
-            size="xl"
-            variant="outline"
-            className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-          >
-            <Link to="/jobs">View Open Positions</Link>
-          </Button>
-        </div>
-      </motion.div>
+        📞 +92 304 7057347
+      </a>
+
+      <span className="hidden sm:block">|</span>
+
+      <a
+        href="mailto:hr@deltaprimeaisolutions.com"
+        className="font-medium hover:underline"
+      >
+        📧 hr@deltaprimeaisolutions.com
+      </a>
     </div>
-  </section>
-    </Layout>
-  );
-}
+  </div>
+</section>
+*/}
+
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center text-primary-foreground"
+            >
+              <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
+                Ready to Transform Your Business?
+              </h2>
+              <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
+                Let's discuss how AI can revolutionize your operations. 
+                Schedule a free consultation with our experts today.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button
+                  asChild
+                  size="xl"
+                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                >
+                  <Link to="/contact">
+                    Schedule Consultation <ArrowRight className="w-5 h-5 ml-2" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  size="xl"
+                  variant="outline"
+                  className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  <Link to="/jobs">View Open Positions</Link>
+                </Button>
+              </div>
+            </motion.div>
+          </Layout>
+        );
+      }
+  

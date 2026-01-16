@@ -1,11 +1,14 @@
--- DeltaPrime AI Solutions Database Setup
+-- DeltaPrime AI Solutions Database Setup (CLEAN)
 -- Run this in Supabase SQL Editor
 
--- 1. Enable pgvector extension
-CREATE EXTENSION IF NOT EXISTS vector;
+-- 0) Required extensions
+-- Note: Enable 'vector' and 'pgcrypto' extensions in Supabase Dashboard
+-- (Project Settings > Database > Extensions)
+-- CREATE EXTENSION IF NOT EXISTS vector;
+-- CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
--- 2. Create contact_submissions table
-CREATE TABLE IF NOT EXISTS contact_submissions (
+-- 1) contact_submissions
+CREATE TABLE contact_submissions (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name TEXT NOT NULL,
     email TEXT NOT NULL,
@@ -13,10 +16,10 @@ CREATE TABLE IF NOT EXISTS contact_submissions (
     created_at TIMESTAMP DEFAULT NOW()
 );
 
-CREATE INDEX IF NOT EXISTS idx_contact_email ON contact_submissions(email);
-CREATE INDEX IF NOT EXISTS idx_contact_created ON contact_submissions(created_at);
+CREATE INDEX idx_contact_email ON contact_submissions(email);
+CREATE INDEX idx_contact_created ON contact_submissions(created_at);
 
--- 3. Create chat_messages table
+-- 2) chat_messages
 CREATE TABLE IF NOT EXISTS chat_messages (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     session_id TEXT NOT NULL,
@@ -25,29 +28,35 @@ CREATE TABLE IF NOT EXISTS chat_messages (
     created_at TIMESTAMP DEFAULT NOW()
 );
 
-CREATE INDEX IF NOT EXISTS idx_chat_session ON chat_messages(session_id);
-CREATE INDEX IF NOT EXISTS idx_chat_created ON chat_messages(created_at);
+CREATE INDEX idx_chat_session ON chat_messages(session_id);
+CREATE INDEX idx_chat_created ON chat_messages(created_at);
 
--- 4. Create knowledge_base table (for RAG)
+-- 3) knowledge_base (RAG)
 CREATE TABLE IF NOT EXISTS knowledge_base (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     title TEXT NOT NULL,
     content TEXT NOT NULL,
     category TEXT,
-    embedding vector(1536),  -- OpenAI embedding dimension
+
+    -- ✅ for auto-ingest + upsert
+    source TEXT UNIQUE,
+
+    embedding vector(1536),
     metadata JSONB,
+
     created_at TIMESTAMP DEFAULT NOW(),
     updated_at TIMESTAMP DEFAULT NOW()
 );
 
 -- Vector similarity index
-CREATE INDEX IF NOT EXISTS knowledge_base_embedding_idx ON knowledge_base 
+CREATE INDEX knowledge_base_embedding_idx ON knowledge_base
 USING ivfflat (embedding vector_cosine_ops)
 WITH (lists = 100);
 
-CREATE INDEX IF NOT EXISTS idx_kb_category ON knowledge_base(category);
+CREATE INDEX idx_kb_category ON knowledge_base(category);
+CREATE INDEX idx_kb_source ON knowledge_base(source);
 
--- 5. Create user_emails table
+-- 4) user_emails
 CREATE TABLE IF NOT EXISTS user_emails (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     email TEXT UNIQUE NOT NULL,
@@ -57,9 +66,9 @@ CREATE TABLE IF NOT EXISTS user_emails (
     created_at TIMESTAMP DEFAULT NOW()
 );
 
-CREATE INDEX IF NOT EXISTS idx_user_email ON user_emails(email);
+CREATE INDEX idx_user_email ON user_emails(email);
 
--- 6. Create service_inquiries table (optional)
+-- 5) service_inquiries
 CREATE TABLE IF NOT EXISTS service_inquiries (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name TEXT NOT NULL,
@@ -69,44 +78,10 @@ CREATE TABLE IF NOT EXISTS service_inquiries (
     created_at TIMESTAMP DEFAULT NOW()
 );
 
-CREATE INDEX IF NOT EXISTS idx_service_email ON service_inquiries(email);
-CREATE INDEX IF NOT EXISTS idx_service_type ON service_inquiries(service_type);
+CREATE INDEX idx_service_email ON service_inquiries(email);
+CREATE INDEX idx_service_type ON service_inquiries(service_type);
 
--- 7. Create vector search function
-CREATE OR REPLACE FUNCTION match_documents(
-    query_embedding vector(1536),
-    match_threshold float DEFAULT 0.7,
-    match_count int DEFAULT 5,
-    category_filter text DEFAULT NULL
-)
-RETURNS TABLE (
-    id uuid,
-    title text,
-    content text,
-    category text,
-    similarity float
-)
-LANGUAGE plpgsql
-AS $$
-BEGIN
-    RETURN QUERY
-    SELECT
-        kb.id,
-        kb.title,
-        kb.content,
-        kb.category,
-        1 - (kb.embedding <=> query_embedding) as similarity
-    FROM knowledge_base kb
-    WHERE 
-        kb.embedding IS NOT NULL
-        AND 1 - (kb.embedding <=> query_embedding) > match_threshold
-        AND (category_filter IS NULL OR kb.category = category_filter)
-    ORDER BY kb.embedding <=> query_embedding
-    LIMIT match_count;
-END;
-$$;
-
--- 8. Create meeting_requests table
+-- 6) meeting_requests
 CREATE TABLE IF NOT EXISTS meeting_requests (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     session_id TEXT NOT NULL,
@@ -120,23 +95,113 @@ CREATE TABLE IF NOT EXISTS meeting_requests (
     created_at TIMESTAMP DEFAULT NOW()
 );
 
-CREATE INDEX IF NOT EXISTS idx_meeting_email ON meeting_requests(email);
-CREATE INDEX IF NOT EXISTS idx_meeting_status ON meeting_requests(status);
-CREATE INDEX IF NOT EXISTS idx_meeting_created ON meeting_requests(created_at);
+CREATE INDEX idx_meeting_email ON meeting_requests(email);
+CREATE INDEX idx_meeting_status ON meeting_requests(status);
+CREATE INDEX idx_meeting_created ON meeting_requests(created_at);
 
--- 9. Insert sample knowledge base documents
--- Note: You'll need to generate embeddings for these separately
+-- 7) updated_at trigger
+CREATE OR REPLACE FUNCTION set_updated_at()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_at = NOW();
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
 
-INSERT INTO knowledge_base (title, content, category) VALUES
-('Web Development Services', 'DeltaPrime offers comprehensive web development services including responsive design, modern frameworks like React and Next.js, API integrations, SEO optimization, and ongoing maintenance. We build scalable web applications that drive business growth.', 'web_dev'),
-('App Development Services', 'We specialize in mobile app development for iOS and Android platforms. Our services include native app development, cross-platform solutions using React Native and Flutter, app store optimization, and post-launch support.', 'app_dev'),
-('AI Development Services', 'Our AI development services include custom machine learning models, natural language processing, computer vision solutions, recommendation engines, and AI integration into existing systems.', 'ai_dev'),
-('QA Services', 'We provide comprehensive quality assurance services including manual testing, automated testing, performance testing, security testing, and continuous testing throughout the development lifecycle.', 'qa'),
-('DevOps Services', 'Our DevOps services include CI/CD pipeline setup, cloud infrastructure management, containerization with Docker and Kubernetes, monitoring and logging, and automated deployment strategies.', 'devops'),
-('About DeltaPrime', 'DeltaPrime AI Solutions is a leading software development agency specializing in web development, mobile apps, AI solutions, QA, and DevOps. We help businesses transform through innovative technology solutions.', 'about'),
-('Our Process', 'Our development process includes: 1) Discovery - understanding your needs, 2) Design - creating solution architecture, 3) Develop - building your solution, 4) Deploy - launching and optimizing.', 'process'),
-('Contact Information', 'You can reach us at hello@deltaprime.ai or call +1 (234) 567-890. Our office hours are Monday to Friday, 9 AM to 6 PM EST.', 'contact');
+DROP TRIGGER IF EXISTS trg_kb_updated ON knowledge_base;
 
--- Note: After inserting documents, you need to generate embeddings for them
--- This can be done via a Python script or API call
+CREATE TRIGGER trg_kb_updated
+BEFORE UPDATE ON knowledge_base
+FOR EACH ROW
+EXECUTE FUNCTION set_updated_at();
 
+-- 8) Vector search function (RPC)
+CREATE OR REPLACE FUNCTION match_documents(
+    query_embedding vector(1536),
+    match_threshold float DEFAULT 0.7,
+    match_count int DEFAULT 5,
+    category_filter text DEFAULT NULL
+)
+RETURNS TABLE (
+    id uuid,
+    title text,
+    content text,
+    category text,
+    source text,
+    metadata jsonb,
+    similarity float
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    RETURN QUERY
+    SELECT
+        kb.id,
+        kb.title,
+        kb.content,
+        kb.category,
+        kb.source,
+        kb.metadata,
+        1 - (kb.embedding <=> query_embedding) as similarity
+    FROM knowledge_base kb
+    WHERE 
+        kb.embedding IS NOT NULL
+        AND 1 - (kb.embedding <=> query_embedding) > match_threshold
+        AND (category_filter IS NULL OR kb.category = category_filter)
+    ORDER BY kb.embedding <=> query_embedding
+    LIMIT match_count;
+END;
+$$;
+
+-- 9) Seed knowledge base (optional)
+-- NOTE: Embeddings will be NULL until your Python ingestion script updates them.
+INSERT INTO knowledge_base (title, content, category, source, metadata)
+VALUES
+('Web Development Services',
+ 'DeltaPrime offers comprehensive web development services including responsive design, modern frameworks like React and Next.js, API integrations, SEO optimization, and ongoing maintenance.',
+ 'web_dev',
+ 'seed:web_dev',
+ '{"type":"seed"}'::jsonb),
+
+('App Development Services',
+ 'We specialize in mobile app development for iOS and Android platforms. Our services include native app development and cross-platform solutions using React Native and Flutter.',
+ 'app_dev',
+ 'seed:app_dev',
+ '{"type":"seed"}'::jsonb),
+
+('AI Development Services',
+ 'Our AI development services include custom machine learning models, natural language processing, computer vision solutions, recommendation engines, and AI integration into existing systems.',
+ 'ai_dev',
+ 'seed:ai_dev',
+ '{"type":"seed"}'::jsonb),
+
+('QA Services',
+ 'We provide comprehensive quality assurance services including manual testing, automated testing, performance testing, security testing, and continuous testing throughout the development lifecycle.',
+ 'qa',
+ 'seed:qa',
+ '{"type":"seed"}'::jsonb),
+
+('DevOps Services',
+ 'Our DevOps services include CI/CD pipeline setup, cloud infrastructure management, containerization with Docker and Kubernetes, monitoring and logging, and automated deployment strategies.',
+ 'devops',
+ 'seed:devops',
+ '{"type":"seed"}'::jsonb),
+
+('About DeltaPrime',
+ 'DeltaPrime AI Solutions is a software development agency specializing in web development, mobile apps, AI solutions, QA, and DevOps.',
+ 'about',
+ 'seed:about',
+ '{"type":"seed"}'::jsonb),
+
+('Our Process',
+ 'Our development process includes: Discovery, Design, Develop, and Deploy.',
+ 'process',
+ 'seed:process',
+ '{"type":"seed"}'::jsonb),
+
+('Contact Information',
+ 'You can reach us at hr@deltaprimeaisolutions.com or call +923047057347.',
+ 'contact',
+ 'seed:contact',
+ '{"type":"seed"}'::jsonb)
+ON CONFLICT (source) DO NOTHING;

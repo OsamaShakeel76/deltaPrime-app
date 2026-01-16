@@ -4,7 +4,17 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { ArrowLeft, Briefcase, MapPin, Clock, DollarSign, Upload, Loader2, CheckCircle } from "lucide-react";
+import {
+  ArrowLeft,
+  Briefcase,
+  MapPin,
+  Clock,
+  DollarSign,
+  Upload,
+  Loader2,
+  CheckCircle,
+} from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,14 +22,17 @@ import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Layout } from "@/components/layout/Layout";
 import { useToast } from "@/hooks/use-toast";
-import { jobs } from "./Jobs";
 
 const applicationSchema = z.object({
   firstName: z.string().min(2, "First name must be at least 2 characters"),
   lastName: z.string().min(2, "Last name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().min(10, "Please enter a valid phone number"),
-  linkedin: z.string().url("Please enter a valid LinkedIn URL").optional().or(z.literal("")),
+  linkedin: z
+    .string()
+    .url("Please enter a valid LinkedIn URL")
+    .optional()
+    .or(z.literal("")),
   coverLetter: z.string().min(50, "Cover letter must be at least 50 characters"),
 });
 
@@ -29,9 +42,25 @@ export default function JobDetails() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { toast } = useToast();
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [resumeFile, setResumeFile] = useState<File | null>(null);
   const [submitted, setSubmitted] = useState(false);
+
+  // TODO: Replace this with your actual jobs data source
+  const jobs = [
+    {
+      id: "1",
+      title: "Senior Developer",
+      department: "Engineering",
+      location: "Remote",
+      type: "Full-time",
+      salary: "$120k-$150k",
+      posted: "2 weeks ago",
+      description: "We are looking for a senior developer...",
+      requirements: ["5+ years experience", "React expertise", "Node.js knowledge"],
+    },
+  ];
 
   const job = jobs.find((j) => j.id === id);
 
@@ -43,21 +72,21 @@ export default function JobDetails() {
     resolver: zodResolver(applicationSchema),
   });
 
-  if (!job) {
-    return (
-      <Layout>
-        <div className="min-h-[60vh] flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="font-heading text-2xl font-bold mb-4">Job Not Found</h1>
-            <p className="text-muted-foreground mb-6">The position you're looking for doesn't exist.</p>
-            <Button asChild>
-              <Link to="/jobs">View All Positions</Link>
-            </Button>
-          </div>
-        </div>
-      </Layout>
-    );
-  }
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (file.size > 5 * 1024 * 1024) {
+      toast({
+        title: "File Too Large",
+        description: "Please upload a file smaller than 5MB.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setResumeFile(file);
+  };
 
   const onSubmit = async (data: ApplicationFormData) => {
     if (!resumeFile) {
@@ -74,26 +103,33 @@ export default function JobDetails() {
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    console.log("Application submitted:", { ...data, resume: resumeFile.name, jobId: job.id });
+    console.log("Application submitted:", {
+      ...data,
+      resume: resumeFile.name,
+      jobId: job?.id,
+    });
 
     setSubmitted(true);
     setIsSubmitting(false);
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      if (file.size > 5 * 1024 * 1024) {
-        toast({
-          title: "File Too Large",
-          description: "Please upload a file smaller than 5MB.",
-          variant: "destructive",
-        });
-        return;
-      }
-      setResumeFile(file);
-    }
-  };
+  if (!job) {
+    return (
+      <Layout>
+        <div className="min-h-[60vh] flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="font-heading text-2xl font-bold mb-4">Job Not Found</h1>
+            <p className="text-muted-foreground mb-6">
+              The position you're looking for doesn't exist.
+            </p>
+            <Button asChild>
+              <Link to="/jobs">View All Positions</Link>
+            </Button>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
 
   if (submitted) {
     return (
@@ -108,10 +144,12 @@ export default function JobDetails() {
               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
                 <CheckCircle className="w-10 h-10 text-primary" />
               </div>
-              <h1 className="font-heading text-3xl font-bold mb-4">Application Submitted!</h1>
+              <h1 className="font-heading text-3xl font-bold mb-4">
+                Application Submitted!
+              </h1>
               <p className="text-muted-foreground mb-8">
-                Thank you for applying for the {job.title} position. 
-                We'll review your application and get back to you soon.
+                Thank you for applying for the {job.title} position. We'll review
+                your application and get back to you soon.
               </p>
               <div className="flex gap-4 justify-center">
                 <Button asChild variant="outline">
@@ -143,14 +181,14 @@ export default function JobDetails() {
             Back to All Positions
           </Button>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex items-center gap-3 mb-4">
-              <h1 className="font-heading text-3xl md:text-4xl font-bold">{job.title}</h1>
+              <h1 className="font-heading text-3xl md:text-4xl font-bold">
+                {job.title}
+              </h1>
               <Badge variant="secondary">{job.department}</Badge>
             </div>
+
             <div className="flex flex-wrap gap-4 text-muted-foreground">
               <span className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
@@ -214,6 +252,7 @@ export default function JobDetails() {
             >
               <div className="sticky top-24 p-6 bg-card rounded-2xl border border-border">
                 <h2 className="font-heading text-xl font-bold mb-6">Apply Now</h2>
+
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -224,9 +263,12 @@ export default function JobDetails() {
                         className={errors.firstName ? "border-destructive" : ""}
                       />
                       {errors.firstName && (
-                        <p className="text-xs text-destructive">{errors.firstName.message}</p>
+                        <p className="text-xs text-destructive">
+                          {errors.firstName.message}
+                        </p>
                       )}
                     </div>
+
                     <div className="space-y-2">
                       <Label htmlFor="lastName">Last Name</Label>
                       <Input
@@ -235,7 +277,9 @@ export default function JobDetails() {
                         className={errors.lastName ? "border-destructive" : ""}
                       />
                       {errors.lastName && (
-                        <p className="text-xs text-destructive">{errors.lastName.message}</p>
+                        <p className="text-xs text-destructive">
+                          {errors.lastName.message}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -277,24 +321,24 @@ export default function JobDetails() {
 
                   <div className="space-y-2">
                     <Label htmlFor="resume">Resume/CV</Label>
-                    <div className="relative">
-                      <input
-                        id="resume"
-                        type="file"
-                        accept=".pdf,.doc,.docx"
-                        onChange={handleFileChange}
-                        className="hidden"
-                      />
-                      <label
-                        htmlFor="resume"
-                        className="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-dashed border-border rounded-lg cursor-pointer hover:border-primary/50 transition-colors"
-                      >
-                        <Upload className="w-5 h-5 text-muted-foreground" />
-                        <span className="text-sm text-muted-foreground">
-                          {resumeFile ? resumeFile.name : "Upload Resume (PDF, DOC)"}
-                        </span>
-                      </label>
-                    </div>
+
+                    <input
+                      id="resume"
+                      type="file"
+                      accept=".pdf,.doc,.docx"
+                      onChange={handleFileChange}
+                      className="hidden"
+                    />
+
+                    <label
+                      htmlFor="resume"
+                      className="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-dashed border-border rounded-lg cursor-pointer hover:border-primary/50 transition-colors"
+                    >
+                      <Upload className="w-5 h-5 text-muted-foreground" />
+                      <span className="text-sm text-muted-foreground">
+                        {resumeFile ? resumeFile.name : "Upload Resume (PDF, DOC)"}
+                      </span>
+                    </label>
                   </div>
 
                   <div className="space-y-2">
@@ -307,7 +351,9 @@ export default function JobDetails() {
                       className={errors.coverLetter ? "border-destructive" : ""}
                     />
                     {errors.coverLetter && (
-                      <p className="text-xs text-destructive">{errors.coverLetter.message}</p>
+                      <p className="text-xs text-destructive">
+                        {errors.coverLetter.message}
+                      </p>
                     )}
                   </div>
 
