@@ -24,8 +24,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hr@deltaprimeaisolutions.com",
-    href: "mailto:hr@deltaprimeaisolutions.com",
+    value: "contact@deltaprimeaisolutions.com",
+    href: "mailto:contact@deltaprimeaisolutions.com",
   },
   {
     icon: Phone,
@@ -115,7 +115,7 @@ export default function Contact() {
                   <Label htmlFor="name">Full Name</Label>
                   <Input
                     id="name"
-                    placeholder="John Doe"
+                    placeholder="Enter your full name"
                     {...register("name")}
                     className={errors.name ? "border-destructive" : ""}
                     aria-describedby={errors.name ? "name-error" : undefined}
@@ -132,7 +132,7 @@ export default function Contact() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="email@example.com"
                     {...register("email")}
                     className={errors.email ? "border-destructive" : ""}
                     aria-describedby={errors.email ? "email-error" : undefined}

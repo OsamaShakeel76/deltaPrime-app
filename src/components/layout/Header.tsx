@@ -40,18 +40,25 @@ export function Header() {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between" aria-label="Main navigation">
           <Link to="/" className="flex items-center gap-3 group" aria-label="DeltaPrime AI Solutions Home">
-            <div className="relative">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-                <svg viewBox="0 0 40 40" className="w-6 h-6 text-primary-foreground" fill="currentColor">
-                  <polygon points="20,4 36,32 4,32" />
-                </svg>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-bold text-xl text-foreground">DeltaPrime</span>
-              <span className="text-xs text-muted-foreground tracking-widest uppercase">AI Solutions</span>
-            </div>
+            
+<div className="relative">
+  <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+    <svg viewBox="0 0 40 40" className="w-6 h-6 text-primary-foreground" fill="currentColor">
+      <polygon points="20,4 36,32 4,32" />
+    </svg>
+  </div>
+</div>
+<div className="flex flex-col">
+  <span className="font-heading font-bold text-xl text-foreground">DeltaPrime</span>
+  <span className="text-xs text-muted-foreground tracking-widest uppercase">
+    AI Solutions
+  </span>
+</div>
+
+
+
           </Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
