@@ -1,0 +1,1112 @@
+[
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRequest",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "ContactForm",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceInquiry",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "get_rag_response",
+        "importPath": "services.rag",
+        "description": "services.rag",
+        "isExtraImport": true,
+        "detail": "services.rag",
+        "documentation": {}
+    },
+    {
+        "label": "get_rag_response",
+        "importPath": "services.rag",
+        "description": "services.rag",
+        "isExtraImport": true,
+        "detail": "services.rag",
+        "documentation": {}
+    },
+    {
+        "label": "get_rag_response",
+        "importPath": "services.rag",
+        "description": "services.rag",
+        "isExtraImport": true,
+        "detail": "services.rag",
+        "documentation": {}
+    },
+    {
+        "label": "detect_meeting_request",
+        "importPath": "services.meeting_scheduler",
+        "description": "services.meeting_scheduler",
+        "isExtraImport": true,
+        "detail": "services.meeting_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "extract_meeting_info",
+        "importPath": "services.meeting_scheduler",
+        "description": "services.meeting_scheduler",
+        "isExtraImport": true,
+        "detail": "services.meeting_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "format_meeting_response",
+        "importPath": "services.meeting_scheduler",
+        "description": "services.meeting_scheduler",
+        "isExtraImport": true,
+        "detail": "services.meeting_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "get_supabase",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_supabase",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_supabase",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_supabase",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_supabase",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_supabase",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "transcribe_audio",
+        "importPath": "services.gemini",
+        "description": "services.gemini",
+        "isExtraImport": true,
+        "detail": "services.gemini",
+        "documentation": {}
+    },
+    {
+        "label": "generate_response",
+        "importPath": "services.gemini",
+        "description": "services.gemini",
+        "isExtraImport": true,
+        "detail": "services.gemini",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "OPENAI_API_KEY",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "GEMINI_API_KEY",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_URL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_KEY",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ORIGINS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "google.generativeai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "get_embedding",
+        "importPath": "services.embeddings",
+        "description": "services.embeddings",
+        "isExtraImport": true,
+        "detail": "services.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "get_embedding",
+        "importPath": "services.embeddings",
+        "description": "services.embeddings",
+        "isExtraImport": true,
+        "detail": "services.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "get_embedding",
+        "importPath": "services.embeddings",
+        "description": "services.embeddings",
+        "isExtraImport": true,
+        "detail": "services.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "create_client",
+        "importPath": "supabase",
+        "description": "supabase",
+        "isExtraImport": true,
+        "detail": "supabase",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "importPath": "routes",
+        "description": "routes",
+        "isExtraImport": true,
+        "detail": "routes",
+        "documentation": {}
+    },
+    {
+        "label": "chat",
+        "importPath": "routes",
+        "description": "routes",
+        "isExtraImport": true,
+        "detail": "routes",
+        "documentation": {}
+    },
+    {
+        "label": "services",
+        "importPath": "routes",
+        "description": "routes",
+        "isExtraImport": true,
+        "detail": "routes",
+        "documentation": {}
+    },
+    {
+        "label": "voice",
+        "importPath": "routes",
+        "description": "routes",
+        "isExtraImport": true,
+        "detail": "routes",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "urlopen",
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "isExtraImport": true,
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "isExtraImport": true,
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "URLError",
+        "importPath": "urllib.error",
+        "description": "urllib.error",
+        "isExtraImport": true,
+        "detail": "urllib.error",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "importPath": "flatted",
+        "description": "flatted",
+        "isExtraImport": true,
+        "detail": "flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "importPath": "flatted",
+        "description": "flatted",
+        "isExtraImport": true,
+        "detail": "flatted",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.routes.chat",
+        "description": "deltaprime-ai-hub-main.backend.routes.chat",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/chat\")\nasync def chat_message(request: ChatRequest):\n    \"\"\"\n    Handle AI chat messages with RAG and meeting scheduling\n    \"\"\"\n    try:\n        # Check if user wants to schedule a meeting\n        if detect_meeting_request(request.message):\n            meeting_info = extract_meeting_info(request.message)",
+        "detail": "deltaprime-ai-hub-main.backend.routes.chat",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.routes.contact",
+        "description": "deltaprime-ai-hub-main.backend.routes.contact",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/contact\")\nasync def submit_contact(form: ContactForm):\n    \"\"\"\n    Handle contact form submissions\n    \"\"\"\n    try:\n        supabase = get_supabase()\n    except Exception as e:\n        print(f\"Supabase not configured: {e}\")",
+        "detail": "deltaprime-ai-hub-main.backend.routes.contact",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.routes.services",
+        "description": "deltaprime-ai-hub-main.backend.routes.services",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/services/quote\")\nasync def submit_service_inquiry(inquiry: ServiceInquiry):\n    \"\"\"\n    Handle service inquiry/quote requests\n    \"\"\"\n    supabase = get_supabase()\n    try:\n        # Save service inquiry\n        result = supabase.table(\"service_inquiries\").insert({",
+        "detail": "deltaprime-ai-hub-main.backend.routes.services",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.routes.voice",
+        "description": "deltaprime-ai-hub-main.backend.routes.voice",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/transcribe\")\nasync def transcribe_voice(audio: UploadFile = File(...), session_id: str = Form(...)):\n    \"\"\"\n    Transcribe audio to text using Google Gemini API\n    \"\"\"\n    try:\n        # Save uploaded file temporarily\n        with tempfile.NamedTemporaryFile(delete=False, suffix=\".wav\") as tmp_file:\n            content = await audio.read()",
+        "detail": "deltaprime-ai-hub-main.backend.routes.voice",
+        "documentation": {}
+    },
+    {
+        "label": "load_website_content",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.services.content_loader",
+        "description": "deltaprime-ai-hub-main.backend.services.content_loader",
+        "peekOfCode": "def load_website_content(root_paths):\n    docs = []\n    for root in root_paths:\n        for dirpath, _, filenames in os.walk(root):\n            for fn in filenames:\n                if fn.endswith(ALLOWED_EXT):\n                    fp = os.path.join(dirpath, fn)\n                    try:\n                        with open(fp, \"r\", encoding=\"utf-8\", errors=\"ignore\") as f:\n                            text = f.read().strip()",
+        "detail": "deltaprime-ai-hub-main.backend.services.content_loader",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_EXT",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.services.content_loader",
+        "description": "deltaprime-ai-hub-main.backend.services.content_loader",
+        "peekOfCode": "ALLOWED_EXT = (\".md\", \".txt\", \".tsx\", \".ts\")\ndef load_website_content(root_paths):\n    docs = []\n    for root in root_paths:\n        for dirpath, _, filenames in os.walk(root):\n            for fn in filenames:\n                if fn.endswith(ALLOWED_EXT):\n                    fp = os.path.join(dirpath, fn)\n                    try:\n                        with open(fp, \"r\", encoding=\"utf-8\", errors=\"ignore\") as f:",
+        "detail": "deltaprime-ai-hub-main.backend.services.content_loader",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.services.embeddings",
+        "description": "deltaprime-ai-hub-main.backend.services.embeddings",
+        "peekOfCode": "client = None\nif OPENAI_API_KEY and OPENAI_API_KEY != \"your_openai_key_here\":\n    client = OpenAI(api_key=OPENAI_API_KEY)\nasync def get_embedding(text: str):\n    \"\"\"\n    Generate embedding for text using OpenAI API\n    Falls back to simple hash if OpenAI key not configured\n    \"\"\"\n    if not client:\n        # Fallback: return a simple hash-based embedding (not ideal, but works for testing)",
+        "detail": "deltaprime-ai-hub-main.backend.services.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "transcribe_audio",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.services.gemini",
+        "description": "deltaprime-ai-hub-main.backend.services.gemini",
+        "peekOfCode": "def transcribe_audio(audio_path: str):\n    \"\"\"\n    Transcribe audio file to text using Gemini API\n    \"\"\"\n    if not GEMINI_API_KEY:\n        return None\n    try:\n        # Upload the audio file\n        audio_file = genai.upload_file(audio_path)\n        # Use Gemini to transcribe",
+        "detail": "deltaprime-ai-hub-main.backend.services.gemini",
+        "documentation": {}
+    },
+    {
+        "label": "detect_meeting_request",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "description": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "peekOfCode": "def detect_meeting_request(message: str) -> bool:\n    \"\"\"\n    Detect if user wants to schedule a meeting\n    \"\"\"\n    meeting_keywords = [\n        'meeting', 'schedule', 'book', 'appointment', 'consultation',\n        'call', 'discuss', 'talk', 'demo', 'presentation', 'arrange',\n        'set up', 'setup', 'organize', 'coordinate', 'plan a meeting'\n    ]\n    message_lower = message.lower()",
+        "detail": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "extract_meeting_info",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "description": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "peekOfCode": "def extract_meeting_info(message: str) -> Dict[str, Optional[str]]:\n    \"\"\"\n    Extract meeting information from user message\n    \"\"\"\n    info = {\n        'name': None,\n        'email': None,\n        'preferred_date': None,\n        'preferred_time': None,\n        'purpose': None,",
+        "detail": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "format_meeting_response",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "description": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "peekOfCode": "def format_meeting_response(meeting_info: Dict, user_message: str) -> str:\n    \"\"\"\n    Format a response for meeting scheduling\n    \"\"\"\n    response_parts = [\n        \"I'd be happy to help you schedule a meeting with our team! 📅\"\n    ]\n    if meeting_info.get('email'):\n        response_parts.append(f\"I have your email: {meeting_info['email']}\")\n    else:",
+        "detail": "deltaprime-ai-hub-main.backend.services.meeting_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "REFUSAL_MESSAGE",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.services.rag",
+        "description": "deltaprime-ai-hub-main.backend.services.rag",
+        "peekOfCode": "REFUSAL_MESSAGE = (\n    \"I don’t have that information available on the DeltaPrime AI Solutions website yet. \"\n    \"Would you like me to connect you with our team?\"\n)\n# System-style strict instruction for the model (passed via context wrapper)\n# NOTE: Since your generate_response(context, query) only accepts (context, query),\n# we inject these rules into the \"context\" to force strict grounding.\nSTRICT_GROUNDING_HEADER = f\"\"\"\nYou are DeltaPrime AI Assistant.\nSTRICT GROUNDING RULES (NON-NEGOTIABLE):",
+        "detail": "deltaprime-ai-hub-main.backend.services.rag",
+        "documentation": {}
+    },
+    {
+        "label": "STRICT_GROUNDING_HEADER",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.services.rag",
+        "description": "deltaprime-ai-hub-main.backend.services.rag",
+        "peekOfCode": "STRICT_GROUNDING_HEADER = f\"\"\"\nYou are DeltaPrime AI Assistant.\nSTRICT GROUNDING RULES (NON-NEGOTIABLE):\n1) Use ONLY the information in the CONTEXT below.\n2) Do NOT use outside knowledge, assumptions, or guesses.\n3) If the answer is not explicitly supported by the CONTEXT, reply EXACTLY with:\n{REFUSAL_MESSAGE}\nCONTEXT (Website Knowledge Base):\n\"\"\"\nasync def get_rag_response(query: str):",
+        "detail": "deltaprime-ai-hub-main.backend.services.rag",
+        "documentation": {}
+    },
+    {
+        "label": "GEMINI_API_KEY",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.config",
+        "description": "deltaprime-ai-hub-main.backend.config",
+        "peekOfCode": "GEMINI_API_KEY = os.getenv(\"GEMINI_API_KEY\")\n# Supabase\nSUPABASE_URL = os.getenv(\"SUPABASE_URL\")\nSUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\n# OpenAI (for embeddings)\nOPENAI_API_KEY = os.getenv(\"OPENAI_API_KEY\")\n# CORS\nCORS_ORIGINS = os.getenv(\"CORS_ORIGINS\", \"http://localhost:8080\").split(\",\")",
+        "detail": "deltaprime-ai-hub-main.backend.config",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_URL",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.config",
+        "description": "deltaprime-ai-hub-main.backend.config",
+        "peekOfCode": "SUPABASE_URL = os.getenv(\"SUPABASE_URL\")\nSUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\n# OpenAI (for embeddings)\nOPENAI_API_KEY = os.getenv(\"OPENAI_API_KEY\")\n# CORS\nCORS_ORIGINS = os.getenv(\"CORS_ORIGINS\", \"http://localhost:8080\").split(\",\")",
+        "detail": "deltaprime-ai-hub-main.backend.config",
+        "documentation": {}
+    },
+    {
+        "label": "SUPABASE_KEY",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.config",
+        "description": "deltaprime-ai-hub-main.backend.config",
+        "peekOfCode": "SUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\n# OpenAI (for embeddings)\nOPENAI_API_KEY = os.getenv(\"OPENAI_API_KEY\")\n# CORS\nCORS_ORIGINS = os.getenv(\"CORS_ORIGINS\", \"http://localhost:8080\").split(\",\")",
+        "detail": "deltaprime-ai-hub-main.backend.config",
+        "documentation": {}
+    },
+    {
+        "label": "OPENAI_API_KEY",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.config",
+        "description": "deltaprime-ai-hub-main.backend.config",
+        "peekOfCode": "OPENAI_API_KEY = os.getenv(\"OPENAI_API_KEY\")\n# CORS\nCORS_ORIGINS = os.getenv(\"CORS_ORIGINS\", \"http://localhost:8080\").split(\",\")",
+        "detail": "deltaprime-ai-hub-main.backend.config",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ORIGINS",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.config",
+        "description": "deltaprime-ai-hub-main.backend.config",
+        "peekOfCode": "CORS_ORIGINS = os.getenv(\"CORS_ORIGINS\", \"http://localhost:8080\").split(\",\")",
+        "detail": "deltaprime-ai-hub-main.backend.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_supabase",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.database",
+        "description": "deltaprime-ai-hub-main.backend.database",
+        "peekOfCode": "def get_supabase():\n    \"\"\"Get Supabase client instance (lazy initialization)\"\"\"\n    global _supabase_client\n    if _supabase_client is None:\n        # Check if Supabase is configured\n        if not SUPABASE_URL or SUPABASE_URL == \"your_supabase_url_here\" or not SUPABASE_KEY or SUPABASE_KEY == \"your_supabase_key_here\":\n            raise Exception(\"Supabase is not configured. Please set SUPABASE_URL and SUPABASE_KEY in .env file\")\n        _supabase_client = create_client(SUPABASE_URL, SUPABASE_KEY)\n    return _supabase_client",
+        "detail": "deltaprime-ai-hub-main.backend.database",
+        "documentation": {}
+    },
+    {
+        "label": "_supabase_client",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.database",
+        "description": "deltaprime-ai-hub-main.backend.database",
+        "peekOfCode": "_supabase_client = None\ndef get_supabase():\n    \"\"\"Get Supabase client instance (lazy initialization)\"\"\"\n    global _supabase_client\n    if _supabase_client is None:\n        # Check if Supabase is configured\n        if not SUPABASE_URL or SUPABASE_URL == \"your_supabase_url_here\" or not SUPABASE_KEY or SUPABASE_KEY == \"your_supabase_key_here\":\n            raise Exception(\"Supabase is not configured. Please set SUPABASE_URL and SUPABASE_KEY in .env file\")\n        _supabase_client = create_client(SUPABASE_URL, SUPABASE_KEY)\n    return _supabase_client",
+        "detail": "deltaprime-ai-hub-main.backend.database",
+        "documentation": {}
+    },
+    {
+        "label": "read_env_file",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.deploy_schema",
+        "description": "deltaprime-ai-hub-main.backend.deploy_schema",
+        "peekOfCode": "def read_env_file(filepath):\n    \"\"\"Read .env file and return dict of variables\"\"\"\n    env_vars = {}\n    try:\n        with open(filepath, 'r') as f:\n            for line in f:\n                line = line.strip()\n                if line and not line.startswith('#'):\n                    if '=' in line:\n                        key, value = line.split('=', 1)",
+        "detail": "deltaprime-ai-hub-main.backend.deploy_schema",
+        "documentation": {}
+    },
+    {
+        "label": "deploy_schema",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.deploy_schema",
+        "description": "deltaprime-ai-hub-main.backend.deploy_schema",
+        "peekOfCode": "def deploy_schema():\n    \"\"\"Deploy schema to Supabase\"\"\"\n    print(\"=\" * 70)\n    print(\"SUPABASE SCHEMA DEPLOYMENT\")\n    print(\"=\" * 70)\n    # Read environment file\n    env_path = os.path.join(os.path.dirname(__file__), '.env')\n    env_vars = read_env_file(env_path)\n    SUPABASE_URL = env_vars.get('SUPABASE_URL', '')\n    SUPABASE_KEY = env_vars.get('SUPABASE_KEY', '')",
+        "detail": "deltaprime-ai-hub-main.backend.deploy_schema",
+        "documentation": {}
+    },
+    {
+        "label": "health_check",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.main",
+        "description": "deltaprime-ai-hub-main.backend.main",
+        "peekOfCode": "def health_check():\n    \"\"\"Health check endpoint\"\"\"\n    return {\n        \"status\": \"ok\",\n        \"message\": \"DeltaPrime AI Solutions API is running\",\n        \"version\": \"1.0.0\"\n    }\n@app.get(\"/api/health\")\ndef api_health():\n    \"\"\"API health check\"\"\"",
+        "detail": "deltaprime-ai-hub-main.backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "api_health",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.main",
+        "description": "deltaprime-ai-hub-main.backend.main",
+        "peekOfCode": "def api_health():\n    \"\"\"API health check\"\"\"\n    return {\n        \"status\": \"healthy\",\n        \"endpoints\": {\n            \"contact\": \"/api/contact\",\n            \"chat\": \"/api/chat\",\n            \"services\": \"/api/services/quote\"\n        }\n    }",
+        "detail": "deltaprime-ai-hub-main.backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.main",
+        "description": "deltaprime-ai-hub-main.backend.main",
+        "peekOfCode": "app = FastAPI(\n    title=\"DeltaPrime AI Solutions API\",\n    description=\"Backend API for DeltaPrime AI Solutions website\",\n    version=\"1.0.0\"\n)\n# CORS middleware\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=CORS_ORIGINS,\n    allow_credentials=True,",
+        "detail": "deltaprime-ai-hub-main.backend.main",
+        "documentation": {}
+    },
+    {
+        "label": "ContactForm",
+        "kind": 6,
+        "importPath": "deltaprime-ai-hub-main.backend.models",
+        "description": "deltaprime-ai-hub-main.backend.models",
+        "peekOfCode": "class ContactForm(BaseModel):\n    name: str\n    email: EmailStr\n    message: str\n    @validator('name')\n    def name_length(cls, v):\n        if len(v) < 2:\n            raise ValueError('Name must be at least 2 characters')\n        return v\n    @validator('message')",
+        "detail": "deltaprime-ai-hub-main.backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "ChatRequest",
+        "kind": 6,
+        "importPath": "deltaprime-ai-hub-main.backend.models",
+        "description": "deltaprime-ai-hub-main.backend.models",
+        "peekOfCode": "class ChatRequest(BaseModel):\n    message: str\n    session_id: str\nclass ServiceInquiry(BaseModel):\n    name: str\n    email: EmailStr\n    service_type: str\n    message: str\n    @validator('service_type')\n    def validate_service_type(cls, v):",
+        "detail": "deltaprime-ai-hub-main.backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceInquiry",
+        "kind": 6,
+        "importPath": "deltaprime-ai-hub-main.backend.models",
+        "description": "deltaprime-ai-hub-main.backend.models",
+        "peekOfCode": "class ServiceInquiry(BaseModel):\n    name: str\n    email: EmailStr\n    service_type: str\n    message: str\n    @validator('service_type')\n    def validate_service_type(cls, v):\n        allowed = [\"web_dev\", \"app_dev\", \"ai_dev\", \"qa\", \"devops\"]\n        if v not in allowed:\n            raise ValueError(f'Service type must be one of: {\", \".join(allowed)}')",
+        "detail": "deltaprime-ai-hub-main.backend.models",
+        "documentation": {}
+    },
+    {
+        "label": "read_env_file",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_connection_simple",
+        "description": "deltaprime-ai-hub-main.backend.test_connection_simple",
+        "peekOfCode": "def read_env_file(filepath):\n    \"\"\"Read .env file and return dict of variables\"\"\"\n    env_vars = {}\n    try:\n        with open(filepath, 'r') as f:\n            for line in f:\n                line = line.strip()\n                if line and not line.startswith('#'):\n                    if '=' in line:\n                        key, value = line.split('=', 1)",
+        "detail": "deltaprime-ai-hub-main.backend.test_connection_simple",
+        "documentation": {}
+    },
+    {
+        "label": "test_supabase",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_connection_simple",
+        "description": "deltaprime-ai-hub-main.backend.test_connection_simple",
+        "peekOfCode": "def test_supabase():\n    \"\"\"Test Supabase connection\"\"\"\n    print(\"=\" * 70)\n    print(\"SUPABASE CONNECTION TEST\")\n    print(\"=\" * 70)\n    # Read environment file\n    env_path = os.path.join(os.path.dirname(__file__), '.env')\n    env_vars = read_env_file(env_path)\n    SUPABASE_URL = env_vars.get('SUPABASE_URL', '')\n    SUPABASE_KEY = env_vars.get('SUPABASE_KEY', '')",
+        "detail": "deltaprime-ai-hub-main.backend.test_connection_simple",
+        "documentation": {}
+    },
+    {
+        "label": "test_health",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "description": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "peekOfCode": "def test_health():\n    \"\"\"Test health check endpoint\"\"\"\n    print(\"\\n\" + \"=\"*70)\n    print(\"TEST 1: Health Check Endpoint\")\n    print(\"=\"*70)\n    try:\n        response = requests.get(f\"{BASE_URL}/\", timeout=5)\n        print(f\"Status: {response.status_code}\")\n        print(f\"Response: {json.dumps(response.json(), indent=2)}\")\n        return response.status_code == 200",
+        "detail": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "test_api_health",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "description": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "peekOfCode": "def test_api_health():\n    \"\"\"Test API health endpoint\"\"\"\n    print(\"\\n\" + \"=\"*70)\n    print(\"TEST 2: API Health Endpoint\")\n    print(\"=\"*70)\n    try:\n        response = requests.get(f\"{BASE_URL}/api/health\", timeout=5)\n        print(f\"Status: {response.status_code}\")\n        print(f\"Response: {json.dumps(response.json(), indent=2)}\")\n        return response.status_code == 200",
+        "detail": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "test_chat",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "description": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "peekOfCode": "def test_chat():\n    \"\"\"Test chat endpoint\"\"\"\n    print(\"\\n\" + \"=\"*70)\n    print(\"TEST 3: Chat Endpoint\")\n    print(\"=\"*70)\n    payload = {\n        \"message\": \"What services does DeltaPrime AI offer?\",\n        \"session_id\": str(uuid.uuid4())\n    }\n    try:",
+        "detail": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "test_contact",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "description": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "peekOfCode": "def test_contact():\n    \"\"\"Test contact endpoint\"\"\"\n    print(\"\\n\" + \"=\"*70)\n    print(\"TEST 4: Contact Form Endpoint\")\n    print(\"=\"*70)\n    payload = {\n        \"name\": \"Test User\",\n        \"email\": \"test@example.com\",\n        \"message\": \"This is a test contact message from the API test script.\"\n    }",
+        "detail": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "run_tests",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "description": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "peekOfCode": "def run_tests():\n    \"\"\"Run all tests\"\"\"\n    print(\"\\n\" + \"=\"*70)\n    print(\"DELTAPRIME AI HUB - API ENDPOINT TESTS\")\n    print(\"=\"*70)\n    print(f\"Base URL: {BASE_URL}\")\n    results = {\n        \"Health Check\": test_health(),\n        \"API Health\": test_api_health(),\n        \"Chat\": test_chat(),",
+        "detail": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URL",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "description": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "peekOfCode": "BASE_URL = \"http://localhost:8001\"\ndef test_health():\n    \"\"\"Test health check endpoint\"\"\"\n    print(\"\\n\" + \"=\"*70)\n    print(\"TEST 1: Health Check Endpoint\")\n    print(\"=\"*70)\n    try:\n        response = requests.get(f\"{BASE_URL}/\", timeout=5)\n        print(f\"Status: {response.status_code}\")\n        print(f\"Response: {json.dumps(response.json(), indent=2)}\")",
+        "detail": "deltaprime-ai-hub-main.backend.test_endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "test_queries",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.backend.test_rag",
+        "description": "deltaprime-ai-hub-main.backend.test_rag",
+        "peekOfCode": "test_queries = [\n    # Should work (in knowledge base)\n    \"What services do you offer?\",\n    \"Tell me about web development\",\n    \"How can I contact DeltaPrime?\",\n    \"What is your QA process?\",\n    \"Do you offer AI development services?\",\n    # Should refuse (not in knowledge base)\n    \"What's the weather today?\",\n    \"Can you help me with my homework?\",",
+        "detail": "deltaprime-ai-hub-main.backend.test_rag",
+        "documentation": {}
+    },
+    {
+        "label": "test_supabase_connection",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_supabase_connection",
+        "description": "deltaprime-ai-hub-main.backend.test_supabase_connection",
+        "peekOfCode": "def test_supabase_connection():\n    \"\"\"Test if Supabase connection is working\"\"\"\n    try:\n        from supabase import create_client\n        SUPABASE_URL = os.getenv(\"SUPABASE_URL\")\n        SUPABASE_KEY = os.getenv(\"SUPABASE_KEY\")\n        print(\"=\" * 60)\n        print(\"SUPABASE CONNECTION TEST\")\n        print(\"=\" * 60)\n        # Check if credentials are configured",
+        "detail": "deltaprime-ai-hub-main.backend.test_supabase_connection",
+        "documentation": {}
+    },
+    {
+        "label": "read_env",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_supabase_http",
+        "description": "deltaprime-ai-hub-main.backend.test_supabase_http",
+        "peekOfCode": "def read_env():\n    \"\"\"Read .env file\"\"\"\n    env = {}\n    env_path = Path(__file__).parent / '.env'\n    if env_path.exists():\n        with open(env_path, 'r') as f:\n            for line in f:\n                line = line.strip()\n                if line and '=' in line and not line.startswith('#'):\n                    key, value = line.split('=', 1)",
+        "detail": "deltaprime-ai-hub-main.backend.test_supabase_http",
+        "documentation": {}
+    },
+    {
+        "label": "test_supabase_http",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.test_supabase_http",
+        "description": "deltaprime-ai-hub-main.backend.test_supabase_http",
+        "peekOfCode": "def test_supabase_http():\n    \"\"\"Test Supabase connection using HTTP requests\"\"\"\n    env = read_env()\n    SUPABASE_URL = env.get('SUPABASE_URL', '')\n    SUPABASE_KEY = env.get('SUPABASE_KEY', '')\n    print(\"=\" * 70)\n    print(\"SUPABASE CONNECTION TEST (HTTP Method)\")\n    print(\"=\" * 70)\n    print(\"\\n[1] CONFIGURATION CHECK:\")\n    print(\"-\" * 70)",
+        "detail": "deltaprime-ai-hub-main.backend.test_supabase_http",
+        "documentation": {}
+    },
+    {
+        "label": "read_env_file",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.verify_schema",
+        "description": "deltaprime-ai-hub-main.backend.verify_schema",
+        "peekOfCode": "def read_env_file(filepath):\n    \"\"\"Read .env file and return dict of variables\"\"\"\n    env_vars = {}\n    try:\n        with open(filepath, 'r') as f:\n            for line in f:\n                line = line.strip()\n                if line and not line.startswith('#'):\n                    if '=' in line:\n                        key, value = line.split('=', 1)",
+        "detail": "deltaprime-ai-hub-main.backend.verify_schema",
+        "documentation": {}
+    },
+    {
+        "label": "verify_schema",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.backend.verify_schema",
+        "description": "deltaprime-ai-hub-main.backend.verify_schema",
+        "peekOfCode": "def verify_schema():\n    \"\"\"Verify all tables exist in Supabase\"\"\"\n    print(\"=\" * 70)\n    print(\"SUPABASE SCHEMA VERIFICATION\")\n    print(\"=\" * 70)\n    # Read environment file\n    env_path = os.path.join(os.path.dirname(__file__), '.env')\n    env_vars = read_env_file(env_path)\n    SUPABASE_URL = env_vars.get('SUPABASE_URL', '')\n    SUPABASE_KEY = env_vars.get('SUPABASE_KEY', '')",
+        "detail": "deltaprime-ai-hub-main.backend.verify_schema",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    keys = []\n    i = 0\n    for _ in value:\n        keys.append(i)\n        i += 1\n    return keys",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "def stringify(value):\n    return _stringify(value, separators=(',', ':'))\nassert stringify([None, None]) == '[[null,null]]'\na = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "a = []\no = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o = {}\nassert stringify(a) == '[[]]'\nassert stringify(o) == '[{}]'\na.append(a)\no['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['o']",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o['o'] = o\nassert stringify(a) == '[[\"0\"]]'\nassert stringify(o) == '[{\"o\":\"0\"}]'\nb = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "b = parse(stringify(a))\nassert isinstance(b, list) and b[0] == b\na.append(1)\na.append('two')\na.append(True)\no['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['one']",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o['one'] = 1\no['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['two']",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o['two'] = 'two'\no['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['three']",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o['three'] = True\nassert stringify(a) == '[[\"0\",1,\"1\",true],\"two\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true},\"two\"]'\na.append(o)\no['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['a']",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o['a'] = a\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\"}]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\"},\"two\",[\"2\",1,\"1\",true,\"0\"]]'\na.append({'test': 'OK'})\na.append([1, 2, 3])\no['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['test']",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o['test'] = {'test': 'OK'}\no['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o['array']",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o['array'] = [1, 2, 3]\nassert stringify(a) == '[[\"0\",1,\"1\",true,\"2\",\"3\",\"4\"],\"two\",{\"o\":\"2\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"0\",\"test\":\"3\",\"array\":\"4\"},{\"test\":\"5\"},[1,2,3],\"OK\"]'\nassert stringify(o) == '[{\"o\":\"0\",\"one\":1,\"two\":\"1\",\"three\":true,\"a\":\"2\",\"test\":\"3\",\"array\":\"4\"},\"two\",[\"2\",1,\"1\",true,\"0\",\"3\",\"4\"],{\"test\":\"5\"},[1,2,3],\"OK\"]'\na2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "a2",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "a2 = parse(stringify(a));\no2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "o2",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "o2 = parse(stringify(o));\nassert a2[0] == a2\nassert o2['o'] == o2\nassert a2[1] == 1 and a2[2] == 'two' and a2[3] == True and isinstance(a2[4], dict)\nassert a2[4] == a2[4]['o'] and a2 == a2[4]['o']['a']\nstr = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "str = parse('[{\"prop\":\"1\",\"a\":\"2\",\"b\":\"3\"},{\"value\":123},[\"4\",\"5\"],{\"e\":\"6\",\"t\":\"7\",\"p\":4},{},{\"b\":\"8\"},\"f\",{\"a\":\"9\"},[\"10\"],\"sup\",{\"a\":1,\"d\":2,\"c\":\"7\",\"z\":\"11\",\"h\":1},{\"g\":2,\"a\":\"7\",\"b\":\"12\",\"f\":6},{\"r\":4,\"u\":\"7\",\"c\":5}]')\nassert str['b']['t']['a'] == 'sup' and str['a'][1]['b'][0]['c'] == str['b']['t']\noo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    },
+    {
+        "label": "oo",
+        "kind": 5,
+        "importPath": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "description": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "peekOfCode": "oo = parse('[{\"a\":\"1\",\"b\":\"0\",\"c\":\"2\"},{\"aa\":\"3\"},{\"ca\":\"4\",\"cb\":\"5\",\"cc\":\"6\",\"cd\":\"7\",\"ce\":\"8\",\"cf\":\"9\"},{\"aaa\":\"10\"},{\"caa\":\"4\"},{\"cba\":\"5\"},{\"cca\":\"2\"},{\"cda\":\"4\"},\"value2\",\"value3\",\"value1\"]');\nassert oo['a']['aa']['aaa'] == 'value1' and oo == oo['b'] and oo['c']['ca']['caa'] == oo['c']['ca']\nprint('OK')",
+        "detail": "deltaprime-ai-hub-main.node_modules.flatted.python.test",
+        "documentation": {}
+    }
+]
