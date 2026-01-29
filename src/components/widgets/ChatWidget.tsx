@@ -13,7 +13,13 @@ interface Message {
 }
 
 
-export function ChatWidget() {
+import { cn } from "@/lib/utils";
+
+interface ChatWidgetProps {
+  className?: string;
+}
+
+export function ChatWidget({ className }: ChatWidgetProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [sessionId] = useState(() => {
     // Generate or retrieve session ID from localStorage
@@ -61,14 +67,14 @@ export function ChatWidget() {
     try {
       // Call backend API with RAG
       const data = await sendChatMessage(messageToSend, sessionId);
-      
+
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
         content: data.response || "I'm sorry, I couldn't process that request. Please try again.",
         sender: "bot",
         timestamp: new Date(),
       };
-      
+
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
@@ -91,7 +97,7 @@ export function ChatWidget() {
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 1.2, type: "spring", stiffness: 200 }}
-        className="fixed bottom-6 right-6 z-50"
+        className={cn("fixed bottom-6 right-6 z-50", className)}
       >
         <Button
           onClick={() => setIsOpen(!isOpen)}
@@ -151,16 +157,14 @@ export function ChatWidget() {
               {messages.map((message) => (
                 <div
                   key={message.id}
-                  className={`flex items-start gap-2 ${
-                    message.sender === "user" ? "flex-row-reverse" : ""
-                  }`}
+                  className={`flex items-start gap-2 ${message.sender === "user" ? "flex-row-reverse" : ""
+                    }`}
                 >
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
-                      message.sender === "user"
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-accent text-accent-foreground"
-                    }`}
+                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${message.sender === "user"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-accent text-accent-foreground"
+                      }`}
                   >
                     {message.sender === "user" ? (
                       <User className="w-4 h-4" />
@@ -169,11 +173,10 @@ export function ChatWidget() {
                     )}
                   </div>
                   <div
-                    className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm ${
-                      message.sender === "user"
-                        ? "bg-primary text-primary-foreground rounded-br-md"
-                        : "bg-muted text-foreground rounded-bl-md"
-                    }`}
+                    className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm ${message.sender === "user"
+                      ? "bg-primary text-primary-foreground rounded-br-md"
+                      : "bg-muted text-foreground rounded-bl-md"
+                      }`}
                   >
                     {message.content}
                   </div>

@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "+92 304 7057347"; // Replace with actual number
+  const whatsappNumber = "923047057347"; // Replace with actual number
   const message = encodeURIComponent("Hello! I'm interested in DeltaPrime AI Solutions.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
@@ -27,7 +27,7 @@ export function WhatsAppButton() {
         >
           <MessageCircle className="w-7 h-7" />
           <span className="absolute -top-2 -right-2 w-4 h-4 bg-destructive rounded-full animate-pulse" />
-          
+
           {/* Tooltip */}
           <span className="absolute left-full ml-3 px-3 py-2 bg-card text-card-foreground text-sm font-medium rounded-lg shadow-card opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
             Chat with us!

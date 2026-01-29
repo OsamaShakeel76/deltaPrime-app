@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from config import CORS_ORIGINS
-from routes import contact, chat, services
+from routes import contact, chat, services, voice
 
 # Create FastAPI app
 app = FastAPI(
@@ -23,6 +23,7 @@ app.add_middleware(
 app.include_router(contact.router, prefix="/api", tags=["Contact"])
 app.include_router(chat.router, prefix="/api", tags=["Chat"])
 app.include_router(services.router, prefix="/api", tags=["Services"])
+app.include_router(voice.router, prefix="/api/voice", tags=["Voice"])
 
 @app.get("/")
 def health_check():

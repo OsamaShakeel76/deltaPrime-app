@@ -99,7 +99,23 @@ CREATE INDEX idx_meeting_email ON meeting_requests(email);
 CREATE INDEX idx_meeting_status ON meeting_requests(status);
 CREATE INDEX idx_meeting_created ON meeting_requests(created_at);
 
--- 7) updated_at trigger
+-- 7) voice_interactions (NEW - for voice agent logging)
+CREATE TABLE IF NOT EXISTS voice_interactions (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    session_id TEXT NOT NULL,
+    user_input TEXT NOT NULL,
+    bot_response TEXT NOT NULL,
+    sources_used TEXT[],
+    interaction_type TEXT DEFAULT 'voice',
+    confidence_score FLOAT,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX idx_voice_session ON voice_interactions(session_id);
+CREATE INDEX idx_voice_created ON voice_interactions(created_at);
+CREATE INDEX idx_voice_interaction_type ON voice_interactions(interaction_type);
+
+-- 8) updated_at trigger
 CREATE OR REPLACE FUNCTION set_updated_at()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -115,7 +131,7 @@ BEFORE UPDATE ON knowledge_base
 FOR EACH ROW
 EXECUTE FUNCTION set_updated_at();
 
--- 8) Vector search function (RPC)
+-- 9) Vector search function (RPC)
 CREATE OR REPLACE FUNCTION match_documents(
     query_embedding vector(1536),
     match_threshold float DEFAULT 0.7,
@@ -153,7 +169,7 @@ BEGIN
 END;
 $$;
 
--- 9) Seed knowledge base (optional)
+-- 10) Seed knowledge base (optional)
 -- NOTE: Embeddings will be NULL until your Python ingestion script updates them.
 INSERT INTO knowledge_base (title, content, category, source, metadata)
 VALUES

@@ -36,7 +36,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Address",
-    value: "86, Delta Prime AI Solutions, 2 Temple Rd, Mozang Chungi, Lahore, 54000",
+    value: "St. Albert, Alberta, Canada",
     href: "#",
   },
 ];
@@ -56,15 +56,15 @@ export default function Contact() {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    
+
     try {
       await submitContactForm(data as { name: string; email: string; message: string });
-      
+
       toast({
         title: "Message Sent!",
         description: "Thank you for contacting us. We'll get back to you soon.",
       });
-      
+
       reset();
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -92,7 +92,7 @@ export default function Contact() {
               Get in <span className="gradient-text">Touch</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Ready to transform your business with AI? We'd love to hear from you. 
+              Ready to transform your business with AI? We'd love to hear from you.
               Fill out the form below or reach out directly.
             </p>
           </motion.div>
@@ -225,19 +225,25 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
+      {/* Map Section */}
       <section className="py-20 bg-card border-t border-border">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="aspect-[21/9] bg-muted rounded-2xl flex items-center justify-center"
+            className="aspect-[21/9] bg-muted rounded-2xl overflow-hidden shadow-lg"
           >
-            <div className="text-center">
-              <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-              <p className="text-muted-foreground">Map integration available upon request</p>
-            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=St.+Albert,+Alberta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map Location"
+            ></iframe>
           </motion.div>
         </div>
       </section>

@@ -33,27 +33,29 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-soft py-3" : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass shadow-soft py-3" : "bg-transparent py-5"
+        }`}
     >
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between" aria-label="Main navigation">
           <Link to="/" className="flex items-center gap-3 group" aria-label="DeltaPrime AI Solutions Home">
-            
-<div className="relative">
-  <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-    <svg viewBox="0 0 40 40" className="w-6 h-6 text-primary-foreground" fill="currentColor">
-      <polygon points="20,4 36,32 4,32" />
-    </svg>
-  </div>
-</div>
-<div className="flex flex-col">
-  <span className="font-heading font-bold text-xl text-foreground">DeltaPrime</span>
-  <span className="text-xs text-muted-foreground tracking-widest uppercase">
-    AI Solutions
-  </span>
-</div>
+
+            <div className="relative">
+              <div className="w-10 h-10 flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300">
+                <svg viewBox="0 0 40 40" className="w-full h-full drop-shadow-sm">
+                  {/* Main Triangle Body - Blue normally, White in dark mode */}
+                  <path d="M20 4 L4 34 L32 34 Z" className="fill-primary dark:fill-white transition-colors duration-300" />
+                  {/* Tonal Segment - Blue opacity in light, White opacity in dark */}
+                  <path d="M20 4 L32 34 L36 34 Z" className="fill-primary opacity-70 dark:fill-white dark:opacity-50 transition-colors duration-300" />
+                </svg>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-heading font-bold text-xl text-foreground">DeltaPrime</span>
+              <span className="text-xs text-muted-foreground tracking-widest uppercase">
+                AI Solutions
+              </span>
+            </div>
 
 
 
@@ -66,11 +68,10 @@ export function Header() {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  location.pathname === link.href
-                    ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                }`}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${location.pathname === link.href
+                  ? "text-primary bg-primary/10"
+                  : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -128,11 +129,10 @@ export function Header() {
                   <Link
                     key={link.href}
                     to={link.href}
-                    className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
-                      location.pathname === link.href
-                        ? "text-primary bg-primary/10"
-                        : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                    }`}
+                    className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${location.pathname === link.href
+                      ? "text-primary bg-primary/10"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                      }`}
                   >
                     {link.label}
                   </Link>

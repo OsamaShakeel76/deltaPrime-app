@@ -5,7 +5,7 @@ const footerLinks = {
   company: [
     { label: "About Us", href: "/about" },
     { label: "Services", href: "/services" },
-   // { label: "Careers", href: "/jobs" },
+    // { label: "Careers", href: "/jobs" },
     { label: "Contact", href: "/contact" },
   ],
   services: [
@@ -103,7 +103,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span>86, Delta Prime AI Solutions, 2 Temple Rd, Mozang Chungi, Lahore, 54000</span>
+                <span>St. Albert, Alberta, Canada</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="w-5 h-5 text-primary shrink-0" />

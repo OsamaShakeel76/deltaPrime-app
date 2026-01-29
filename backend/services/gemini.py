@@ -69,3 +69,30 @@ Answer:"""
     # All models failed
     return "I'm currently unavailable. Please contact us directly at hello@deltaprime.ai"
 
+
+def transcribe_audio(audio_path: str):
+    """
+    Transcribe audio file to text using Gemini API
+    """
+    if not GEMINI_API_KEY:
+        return None
+    
+    try:
+        # Upload the audio file
+        audio_file = genai.upload_file(audio_path)
+        
+        # Use Gemini to transcribe
+        model = genai.GenerativeModel('gemini-2.0-flash-lite')
+        response = model.generate_content([
+            "Please transcribe this audio to text. Return only the transcribed text, nothing else.",
+            audio_file
+        ])
+        
+        # Delete the uploaded file
+        genai.delete_file(audio_file.name)
+        
+        return response.text.strip() if response.text else None
+    
+    except Exception as e:
+        print(f"Error transcribing audio: {e}")
+        return None

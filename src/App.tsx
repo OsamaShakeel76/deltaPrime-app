@@ -11,6 +11,10 @@ import Contact from "./pages/Contact";
 import Jobs from "./pages/Jobs";
 import JobDetails from "./pages/JobDetails";
 import NotFound from "./pages/NotFound";
+import { ChatWidget } from "./components/widgets/ChatWidget";
+import { VoiceAgent } from "./components/widgets/VoiceAgent";
+
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -21,14 +25,19 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            
+
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+            <ChatWidget className="static" />
+            <VoiceAgent className="static" />
+          </div>
         </BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
